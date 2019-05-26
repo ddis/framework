@@ -2,5 +2,5 @@
 
 $router = \kernel\Route::getInstance();
 
-$router->get('\/', [\controllers\IndexController::class, 'index']);
-$router->get('users\/([\d]+)\/ddis', [\controllers\IndexController::class, 'user']);
+$router->get('\/', [\app\controllers\IndexController::class, 'index']);
+$router->get('users\/([\d]+)\/ddis', [\app\controllers\IndexController::class, 'user']);
